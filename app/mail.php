@@ -20,7 +20,7 @@ if(((boolean) $_POST['name']) and ((boolean) $_POST['email']) and ((boolean) $_P
 
 	$smessage = Swift_Message::newInstance()
 	  ->setSubject('Tchew.info - Contact Us')
-	  ->setFrom(array('matthew@matthewhammond.net' => 'Tchew Web Design'))
+	  ->setFrom(array('contact@tchew.info' => 'Tchew Web Design'))
 	  ->setTo(array('contact@tchew.info', 'matthew@matthewhammond.net'))
 	  ->setBody($body);
 
