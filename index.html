@@ -24,26 +24,117 @@
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
     <script src="/js/modernizr-2.5.3.min.js"></script>
   </head>
-  <body>
+  <body id="home" data-spy="scroll" data-target=".navbar">
     <div class="container">
-    	<div class="row">
-	    	<div class="span3">
-		    	<img src="/img/tchew.png" style="width:100%;" />
-	    	</div>
-    	</div>
-    	<hr>
-    	<div class="row">
-			<div class="span12">
-				<p>New site coming soon</p>
-				<p><a href="mailto:contact@tchew.info" class="btn btn-inverse"><i class="icon-white icon-envelope"></i> Contact us</a></p>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<div class="span8 offset2">
+					<ul id="navbar" class="nav" data-offset="60">
+						<li class="active"><a href="#home">Home</a></li>
+						<li><a href="#recentprojects">Recent Projects</a></li>
+						<li><a href="#contactus">Contact Us</a></li>
+					</ul>
+					</div>
+				</div>
 			</div>
+		</div>
+		<div class="main span8 offset2">
+	    	<div class="row-fluid">
+		    	<div class="span7">
+			    	<a href="/"><img src="/img/tchew.png" /></a>
+		    	</div>
+	    	</div>
+	    	<hr>
+	    	<p class="lead">Tchew Web Development provide custom solutions to clients who require quality web based applications. Tchew cater for all sizes of project, and all budgets.</p>
+	    	<p>We provide solutions that give the user a great web experience and clients a solution that will fulfil all your requirements from a one page brochure site to a fully customisable website, supported by a bespoke content management system.</p>
+		    <p>Tchew are happy to discuss your ideas at any time and offer estimates and design proposals free of charge. To discuss your needs please <a href="#contactus">Contact Us</a>.</p>
+		    <div id="recentprojects"></div>
+	    	<hr />
+	    	<div class="row-fluid">
+				<div class="span12">
+					<h2>Recent Projects</h2>
+					<div id="myCarousel" class="carousel slide" style="border:1px solid #eee;">
+						<!-- Carousel items -->
+						<div class="carousel-inner">
+							<div class="active item">
+								<img src="/img/gallery/avass.png" />
+								<div class="carousel-caption">
+									<h4>A-vass.co.uk</h4>
+									<p>Website of artist Andrew Vass <i class="icon-white icon-share"></i> <a href="http://a-vass.co.uk">a-vass.co.uk</a></p>
+			                    </div>
+							</div>
+							<div class="item">
+								<img src="/img/gallery/jackgoffe.png" />
+								<div class="carousel-caption">
+									<h4>Jackgoffe.com</h4>
+									<p>Website of London based photographer, Jack Goffe <i class="icon-white icon-share"></i> <a href="http://jackgoffe.com">jackgoffe.com</a></p>
+			                    </div>
+							</div>
+							<div class="item">
+								<img src="/img/gallery/alastairlevy.png" />
+								<div class="carousel-caption">
+									<h4>alastairlevy.net</h4>
+									<p>Website of London based artist, Alastair Levy <i class="icon-white icon-share"></i> <a href="http://alastairlevy.net">alastairlevy.net</a></p>
+			                    </div>
+							</div>
+							<div class="item">
+								<img src="/img/gallery/armandsprogis.png" />
+								<div class="carousel-caption">
+									<h4>a-fotografy.co.uk</h4>
+									<p>Website of Edinburgh based photographer, Armands Sprogis <i class="icon-white icon-share"></i> <a href="http://a-fotografy.net">a-fotografy.net</a></p>
+			                    </div>
+							</div>
+						</div>
+						<!-- Carousel nav -->
+						<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+						<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+					</div>
+				</div>
+	    	</div>
+	    	<div id="contactus"></div>
+	    	<hr />
+			<div class="row-fluid">
+				<div class="span12">
+					<h2>Contact Us</h2>
+					<form id="contact" action="/app/mail.php" method="post" accept-charset="utf-8" class="form">
+						<fieldset>
+							<div class="control-group">
+								<label class="control-label" for="name">Name</label>
+								<div class="controls">
+									<input type="text" id="name" name="name" class="span12" required />
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="email">Email</label>
+								<div class="controls">
+									<input type="email" id="email" name="email" class="span12" required />
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="message">Your Message</label>
+								<div class="controls">
+									<textarea name="message" id="message" cols="50" rows="10" class="span12" required></textarea>
+								</div>
+							</div>
+							<div class="control-group">
+								<div class="controls">
+									<input type="submit" id="send" name="send" value="Send" class="btn btn-inverse" />
+									<input type="reset" name="reset" value="Reset" class="btn" />
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+	    	</div>
+	    	<hr>
+			<footer>
+				<p>&copy; Tchew 2012</p>
+			</footer>
     	</div>
-		<hr>
-		<footer>
-			<p>&copy; Tchew 2012</p>
-		</footer>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
