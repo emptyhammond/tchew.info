@@ -1,5 +1,19 @@
 $('#navbar').scrollspy();
 
+$(document).bind('scroll', function(){
+
+	var b = $('body').scrollTop();
+
+	if(b > 40)
+	{
+		$('html').addClass('scrolled');
+	}
+	else
+	{
+		$('html').removeClass('scrolled');
+	}
+});
+
 $('#contact').submit(function(){
 
 	var name = $('#contact #name').val(),
